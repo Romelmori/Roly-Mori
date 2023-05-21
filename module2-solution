@@ -1,5 +1,109 @@
 index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>module2-solution_version destokp</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+.container {
+  display: flex;
+}
+h1{
+    text-align: center;
+    color: #1b0505;
+}
+.section-header {
+  text-align: right;
+}
+.section-content p {
+  margin: 0;
+}
+h2{
+    display: inline-block;
+    background-color: bisque;
+    margin-top:247px;
+    right: 10px;
+    margin: 0;
+   margin-top: 0;
+    
+}
 
+.section {
+   width: 33%;
+   border: 2px solid black;
+  flex: 1;
+  margin: 10px;
+  background-color: gray;
+  padding: 10px;
+  position: relative;
+  
+}
+@media (min-width: 992px) {
+  .section {
+    float: left;
+    width: 33.33%; /* Cada sección ocupa el 33.33% del ancho en pantallas de 992px y superiores */
+  }
+}
+.section-header {
+  position: relative; /* Aplicamos posicionamiento absoluto a los títulos */
+  top: 0; /* Colocamos los títulos en la parte superior */
+  right: 0; /* Colocamos los títulos en la parte derecha */
+  padding: 1px;
+}
+.section:nth-child(1) .section-header h2 {
+  background-color: rgb(212, 141, 163); /* Color de fondo para el título de la sección 1 */
+}
 
+.section:nth-child(2) .section-header h2 {
+  background-color: rgb(180, 68, 24); /* Color de fondo para el título de la sección 2 */
+}
+
+.section:nth-child(3) .section-header h2 {
+  background-color: rgb(202, 189, 111); /* Color de fondo para el título de la sección 3 */
+}
+</style>
+</head>
+<body>
+    <h1>our menu</h1>
+  <div class="container">
+    <div class="section">
+      <div class="section-header">
+        <h2>Chiken</h2>
+      </div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Possimus ex magnam nobis distinctio, qui quia 
+        ad aut commodi facilis delectus molestias nihil 
+        obcaecati aperiam, inventore rerum iure velit. 
+        Repellat, quia.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2>Beef</h2>
+      </div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Possimus ex magnam nobis distinctio, qui quia 
+            ad aut commodi facilis delectus molestias nihil 
+            obcaecati aperiam, inventore rerum iure velit. 
+            Repellat, quia.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2>Sushi</h2>
+      </div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Possimus ex magnam nobis distinctio, qui quia 
+            ad aut commodi facilis delectus molestias nihil 
+            obcaecati aperiam, inventore rerum iure velit. 
+            Repellat, quia.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 
 
