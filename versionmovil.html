@@ -1,1 +1,106 @@
+vesrionmovil.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <style>
+    body{
+     align-items: center;
+     height: 100vh;
+    }
+    h1{
+     text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column; /* Cambiar la dirección del flujo a vertical */
+      flex: 1 1 300px;
+    }
+
+    .section {
+      flex: 1;
+      margin: 10px;
+      padding: 20px;
+      background-color: #aaa9a9e5;
+      border: 2px solid black;
+    }
+
+    .full-width {
+      flex-basis: 50%;
+    }
+
+    .section-header {
+      text-align: right;
+    }
+
+    .section-header h2 {
+      display: inline-block;
+      border: 2px solid black;
+      margin: 0;
+      color: #fff;
+      background-color: blue;
+      padding: 10px;
+    }
+
+    .section-content p {
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        flex-basis: 100%; /* Cada sección ocupa el 100% del ancho en la vista móvil */
+      }
+
+      .full-width {
+        flex-basis: 100%; /* La tercera sección ocupa el 100% del ancho */
+      }
+
+      .section-header {
+        text-align: left; /* Alinear el título a la izquierda en la vista móvil */
+      }
+    }
+
+    .section:nth-child(1) .section-header h2 {
+      background-color: rgb(212, 141, 163); /* Color de fondo para el título de la sección 1 */
+    }
+
+    .section:nth-child(2) .section-header h2 {
+      background-color: rgb(180, 68, 24); /* Color de fondo para el título de la sección 2 */
+    }
+
+    .section:nth-child(3) .section-header h2 {
+      background-color: rgb(202, 189, 111); /* Color de fondo para el título de la sección 3 */
+    }
+  </style>
+</head>
+<body>
+  <h1>our menu</h1>
+  <div class="container">
+    <div class="section">
+      <div class="section-header">
+        <h2>Chiken</h2>
+      </div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex magnam nobis distinctio, qui quia ad aut commodi facilis delectus molestias nihil obcaecati aperiam, inventore rerum iure velit. Repellat, quia.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2>Beef</h2>
+      </div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex magnam nobis distinctio, qui quia ad aut commodi facilis delectus molestias nihil obcaecati aperiam, inventore rerum iure velit. Repellat, quia.</p>
+      </div>
+    </div>
+    <div class="section full-width">
+      <div class="section-header">
+        <h2>Sushi</h2>
+      </div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex magnam nobis distinctio, qui quia ad aut commodi facilis delectus molestias nihil obcaecati aperiam, inventore rerum iure velit. Repellat, quia.</p>
+
+</body>
+
+</html>
